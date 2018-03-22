@@ -1,0 +1,9 @@
+#elasticsearch cluster name
+cluster:
+  name: elasticsearch
+
+client:
+  transport:
+    ignore_cluster_name: true
+    ping_timeout: 5s
+    nodes_sampler_interval: 5s
