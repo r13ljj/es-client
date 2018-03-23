@@ -1,5 +1,6 @@
-package com.jonex.es.client;
+package com.jonex.es.client.api;
 
+import com.jonex.es.client.NodeClient;
 import org.elasticsearch.action.ActionListener;
 import org.elasticsearch.action.admin.cluster.node.tasks.get.GetTaskResponse;
 import org.elasticsearch.action.admin.cluster.node.tasks.list.ListTasksResponse;
@@ -37,7 +38,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 /**
  * Created by xubai on 2018/03/20 上午1:28.
  */
-public class IndexApi {
+public class DocApi {
 
     public void prepareIndex()throws Exception{
         /*IndexResponse response = NodeClient.getInstance().getClient().prepareIndex("twitter", "tweet", "1")
